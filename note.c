@@ -1,4 +1,6 @@
 //math.h
+//平方根sqrt
+
 #include <stdio.h>
 #include <math.h>
 
