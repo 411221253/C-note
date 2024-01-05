@@ -1,3 +1,19 @@
+//ctype.h常見函式
+isalnum		是否為字母數字
+isalpha		是否為字母
+islower		是否為小寫字母
+isupper		是否為大寫字母
+isdigit		是否為數字
+isxdigit	是否為16進位數字
+iscntrl		是否為控制字元
+isgraph		是否為圖形字元（例如，空格、控制字元都不是）
+isspace		是否為空格字元（包括制表符、回車字元、換行符等）
+isblank		是否為空白字元 (C99/C++11新增)（包括水平制表符）
+isprint		是否為可列印字元
+ispunct		是否為標點
+tolower		轉換為小寫
+toupper		轉換為大寫
+
 //isalpha，將字母小寫轉大寫，大寫維持大寫
 
 #include <stdio.h>
