@@ -66,5 +66,81 @@ int main() {
     return 0;
 }
 
+#include <stdio.h>
+#include <ctype.h>
 
+int main() {
+    char input;
 
+    // 提示使用者輸入一個字符
+    printf("請輸入一個字符： ");
+    scanf(" %c", &input);
+
+    // 檢查輸入的字符是否是數字
+    if (isdigit(input)) {
+        printf("您輸入的是數字。\n");
+    } else {
+        printf("您輸入的不是數字。\n");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char input;
+
+    // 提示使用者輸入一個字符
+    printf("請輸入一個字符： ");
+    scanf(" %c", &input);
+
+    // 將輸入的字符轉換為小寫
+    char lowercase = tolower(input);
+
+    // 輸出轉換後的字符
+    printf("轉換後的字符為：%c\n", lowercase);
+
+    return 0;
+}
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char input;
+
+    // 提示使用者輸入一個字符
+    printf("請輸入一個字符： ");
+    scanf(" %c", &input);
+
+    // 檢查輸入的字符是否是標點符號
+    if (ispunct(input)) {
+        printf("您輸入的是標點符號。\n");
+    } else {
+        printf("您輸入的不是標點符號。\n");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char input;
+
+    // 提示使用者輸入一個字符
+    printf("請輸入一個字符： ");
+    scanf(" %c", &input);
+
+    // 檢查輸入的字符是否是可打印字符且不是空格
+    if (isgraph(input)) {
+        printf("您輸入的是可打印字符且不是空格。\n");
+    } else {
+        printf("您輸入的不是可打印字符且不是空格。\n");
+    }
+
+    return 0;
+}
